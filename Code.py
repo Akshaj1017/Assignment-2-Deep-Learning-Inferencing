@@ -2,7 +2,7 @@ import tabula
 
 pdf_path = "C:/Users/User/OneDrive - ABES/Desktop/Assignment2_walnut/keppel-corporation-limited-annual-report-2018.pdf"
 
-# Extract table from PDF file
+# Extract table from PDF file, page number = 69
 dfs = tabula.read_pdf(pdf_path, pages='69')
 
 print(len(dfs))
