@@ -1,0 +1,3 @@
+pip install camelot-py
+pip install tabula-py
+pip install pandas
