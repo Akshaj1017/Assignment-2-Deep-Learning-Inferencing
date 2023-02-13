@@ -17,3 +17,12 @@ df = pd.read_csv("first_table.csv")
 
 # Write the DataFrame to an Excel file
 df.to_excel("output.xlsx", index=False)
+
+#Refining the Table extracted
+
+df2=pd.read_excel("C:/Users/User/OneDrive - ABES/Desktop/Research_Intership/Assignment2_walnut/output.xlsx")
+
+df2.to_csv("data1.csv")
+df2=pd.read_csv("data1.csv",header=None)
+df3=df2.iloc[1:]
+df3.to_excel("output2.xlsx", index=False)
